@@ -1,0 +1,42 @@
+---
+// Component Imports
+import Menu from '../components/Menu.svelte';
+import Main from '../components/Main.svelte';
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'Hillcroft Lacrosse Club';
+let open = false
+---
+
+<style>
+	:global(body) {
+		padding: 0;
+	}
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{title}</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')} />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+
+</head>
+<body>
+  <div class="relative md:flex ">
+    <Menu client:load />
+    <div class="flex-1 pt-8 md:pt-0 md:pl-64">
+      <slot />
+    </div>  
+  </div>
+</body>
+</html>
