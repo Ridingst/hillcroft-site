@@ -25,7 +25,7 @@
     </a>
   </div>
   <div class="col-span-1 h-full bg-black z-0">
-    <img class="object-cover h-full" src="./images/hillcroft_lacrosse_club_london_stash.jpg">
+    <img class="object-cover h-full" src="/images/hillcroft_lacrosse_club_london_stash.jpg">
   </div>
 </div>
 

@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="lg:inline-block col-span-1 h-full bg-black z-0">
-    <img class="object-cover h-full" src="./images/hillcroft_lacrosse_club_womens_ladies_london_team.jpg">
+    <img class="object-cover h-full" src="/imageshillcroft_lacrosse_club_womens_ladies_london_team.jpg">
   </div>
 </div>
   
