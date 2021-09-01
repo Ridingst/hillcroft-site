@@ -1,5 +1,5 @@
   
-<div class="w-full lg:min-h-screen items-center bg-gray-900 grid grid-cols-1 lg:grid-cols-3 lg:gap-0">
+<div class="w-full lg:min-h-screen items-center bg-gray-900 grid grid-cols-1 lg:grid-cols-3 lg:gap-0" id="womens">
   <div class="w-full lg:col-span-2 lg:inline-block px-10 z-10">
     <div class="py-6">
       <h4 class="text-7xl lg:text-9xl tracking-widest font-bold leading-snug text-gray-700">Teams<span class="text-yellow-500">.</span></h4>

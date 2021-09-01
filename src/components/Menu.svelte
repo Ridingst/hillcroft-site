@@ -38,35 +38,35 @@
       <!-- nav -->
       <nav class="flex-grow lg:block p-4 lg:pb-0 divide-y divide-gray-700">
         
-        <a class="block py-2 mt-2" href="#">
+        <a class="block py-2 mt-2" href="#intro">
           <div class="w-full text-center hover:text-yellow-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto my-2" viewBox="0 0 512 512"><path fill="currentColor" d="M448 96v320h32a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16H320a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32V288H160v128h32a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16H32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32V96H32a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h160a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16h-32v128h192V96h-32a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h160a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16z"></path></svg>
             Hillcroft
           </div>
         </a>
 
-        <a class="block py-2 mt-2" href="#">
+        <a class="block py-2 mt-2" href="#mens">
           <div class="w-full text-center hover:text-yellow-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto my-2" viewBox="0 0 20 20" fill="currentColor"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" /></svg>
             Teams
           </div>
         </a>
 
-        <a class="block py-2 mt-2" href="#">
+        <a class="block py-2 mt-2" href="#socials">
           <div class="w-full text-center hover:text-yellow-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto my-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" /></svg>
             Social
           </div>
         </a>
 
-        <a class="block py-2 mt-2" href="#">
+        <a class="block py-2 mt-2" href="#contact">
           <div class="w-full text-center hover:text-yellow-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto my-2" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
             Contact
           </div>
         </a>
 
-        <a class="block py-2 mt-2" href="#">
+        <a class="block py-2 mt-2" href="https://store.hillcroftlacrosse.com">
           <div class="w-full text-center hover:text-yellow-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto my-2" viewBox="0 0 20 20" fill="currentColor"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
             Store

@@ -2,7 +2,7 @@
     import Button from '../components/Button.svelte';
   </script>
   
-  <div class="w-full lg:min-h-screen items-center bg-gray-100 grid grid-cols-1 lg:grid-cols-3 lg:gap-0">
+  <div class="w-full lg:min-h-screen items-center bg-gray-100 grid grid-cols-1 lg:grid-cols-3 lg:gap-0" id="mens">
     <div class="w-full col-span-1 lg:col-span-2 lg:inline-block px-10 z-10">
       <div class="py-6">
         <h4 class="text-7xl lg:text-9xl tracking-widest font-bold leading-snug text-white">Teams<span class="text-yellow-500">.</span></h4>

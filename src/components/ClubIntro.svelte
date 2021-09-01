@@ -2,7 +2,7 @@
   import Button from '../components/Button.svelte';
 </script>
 
-<div class="w-full lg:min-h-screen items-center bg-white grid grid-cols-1 lg:grid-cols-3 gap-0">
+<div class="w-full lg:min-h-screen items-center bg-white grid grid-cols-1 lg:grid-cols-3 gap-0" id="intro">
   <div class="w-full col-span-1 lg:col-span-2 lg:inline-block px-10 z-10">
     <div class="py-6">
       <h2 class="text-6xl lg:text-9xl tracking-widest font-bold leading-snug">Hillcroft<span class="text-yellow-500">.</span></h2>
