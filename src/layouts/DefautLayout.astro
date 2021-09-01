@@ -1,7 +1,6 @@
 ---
 // Component Imports
 import Menu from '../components/Menu.svelte';
-import Main from '../components/Main.svelte';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
@@ -32,9 +31,9 @@ let open = false
 
 </head>
 <body>
-  <div class="relative md:flex ">
+  <div class="relative lg:flex bg-gray-300">
     <Menu client:load />
-    <div class="flex-1 pt-8 md:pt-0 md:pl-64">
+    <div class="flex-1 pt-8 lg:pt-0 lg:ml-64">
       <slot />
     </div>  
   </div>

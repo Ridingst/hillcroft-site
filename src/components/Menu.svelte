@@ -3,10 +3,10 @@
 </script>
 
 
-<div class='fixed w-2/3 md:w-64 pt-8 md:pt-0 h-screen top-0'>
+<div class='fixed w-2/3 lg:w-64 pt-8 lg:pt-0 h-screen top-0 z-50'>
   
   <!-- mobile menu bar -->
-  <div class="bg-gray-800 flex justify-between md:hidden absolute top-0 z-20 w-screen text-yellow-500">
+  <div class="bg-gray-800 flex justify-between lg:hidden absolute top-0 z-20 w-screen text-yellow-500">
     <!-- logo -->
     <span class="my-auto mx-2"> 
       <img class="object-contain inline " src="./images/hillcroft_lacrosse_club_london_icon.png">
@@ -25,18 +25,18 @@
   </div>
 
   <!-- sidebar -->
-  <aside class="{hidden ? 'hidden' : ''} md:fixed z-10 md:block w-64 h-full bg-gray-800">
+  <aside class="{hidden ? 'hidden' : ''} lg:fixed z-10 lg:block w-64 h-full bg-gray-800">
     <div class="text-gray-700 inset-y-0 left-0 flex flex-col h-full">
 
       <!-- logo -->
-      <div class="w-full bg-gray-700 items-center py-8 hidden md:inline-block ">
+      <div class="w-full bg-gray-700 items-center py-8 hidden lg:inline-block ">
         <a href="#" class="text-white flex space-x-2 px-4 w-full text-xl text-center uppercase">
           <img class="object-contain h-32 w-full my-4" src="./images/hillcroft_lacrosse_club_logo.png">
         </a>
       </div>
 
       <!-- nav -->
-      <nav class="flex-grow md:block p-4 md:pb-0 divide-y divide-gray-700">
+      <nav class="flex-grow lg:block p-4 lg:pb-0 divide-y divide-gray-700">
         
         <a class="block py-2 mt-2" href="#">
           <div class="w-full text-center hover:text-yellow-500">
