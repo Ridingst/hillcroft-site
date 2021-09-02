@@ -9,12 +9,12 @@ import Socials from '../components/Socials.svelte';
 import Instagram from '../components/Instagram.svelte';
 import Contact from '../components/Contact.svelte';
 
-let prefix = 'https://'
+let baseUrl = ''
 if(process.env.VERCEL_ENV_URL.includes('localhost')){
-    prefix = 'http://'
+    baseUrl = 'http://' + process.env.VERCEL_ENV_URL
+} else {
+    baseUrl = 'https://' + process.env.VERCEL_ENV_URL
 }
-
-let baseUrl = prefix + process.env.VERCEL_ENV_URL
 ---
 
 
