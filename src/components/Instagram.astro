@@ -1,12 +1,8 @@
 ---
   import InstagramPost from './InstagramPost.astro'
+  const posts = []
 ---
 
-<script>
-  posts = []
-</script>
-
 <div class="flex flex-wrap">
-  
   {posts.map(p => <InstagramPost image={p.node.display_url} />)}
 </div>
