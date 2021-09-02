@@ -1,6 +1,6 @@
 module.exports = (req, res) => {
-   const client_id = '1535986596754956'
-   const redirect_uri = 'https://hillcroft-site.vercel.com/api/instagram/callback'
+   const client_id = process.env.INSTAGRAM_CLIENT_ID;
+   const redirect_uri = process.env.VERCEL_ENV_URL + '/api/instagram/callback';
 
   const authUrl = 'https://api.instagram.com/oauth/authorize' + 
   '?client_id=' + client_id + 
