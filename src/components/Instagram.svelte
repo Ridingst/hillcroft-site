@@ -6,7 +6,7 @@
   export let baseUrl;
   
   onMount(async () => {
-    const res = await fetch('http://' + baseUrl + '/api/instagram/feed')
+    const res = await fetch(baseUrl + '/api/instagram/feed')
     posts = await res.json()
   })
 </script>
