@@ -1,9 +1,0 @@
----
-  import InstagramPost from './InstagramPost.astro'
-  const response = await fetch('http://' + process.env.VERCEL_ENV_URL + '/api/instagram/feed')
-  const posts = await response.json()
----
-
-<div class="flex flex-wrap w-full bg-gray-800">
-  {posts.map(p => <InstagramPost image={p.media_url} link={p.permalink} caption={p.caption} />)}
-</div>

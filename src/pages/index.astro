@@ -6,7 +6,10 @@ import ClubIntro from '../components/ClubIntro.svelte';
 import TeamsMens from '../components/TeamsMens.svelte';
 import TeamsWomens from '../components/TeamsWomens.svelte';
 import Socials from '../components/Socials.svelte';
-import Instagram from '../components/Instagram.astro';
+import Instagram from '../components/Instagram.svelte';
+import Contact from '../components/Contact.svelte';
+
+let baseUrl = process.env.VERCEL_ENV_URL
 ---
 
 
@@ -16,6 +19,7 @@ import Instagram from '../components/Instagram.astro';
     <TeamsMens />
     <TeamsWomens />
     <Socials />
-    <Instagram />
+    <Instagram baseUrl={'localhost:3000'} client:idle />
+
 
 </BaseLayout>
