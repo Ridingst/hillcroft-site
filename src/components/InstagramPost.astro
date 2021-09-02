@@ -1,11 +1,13 @@
 ---
 export interface Props {
   image: any;
+  image: link;
+  image: caption;
 }
 
-const { image } = Astro.props;
+const { image, caption, link } = Astro.props;
 ---
 
-<div class="w-full lg:w-1/4 mb-4 bg-gray-500 p-2">
-  <img src={image} class="cover">
-</div>
+<a class="w-full lg:w-1/4 p-2 hover:brightness-90 rounded-sm" href={link} target="_blank">
+  <img src={image} class="cover h-full w-full" alt={caption}>
+</a>

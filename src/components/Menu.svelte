@@ -25,7 +25,7 @@
   </div>
 
   <!-- sidebar -->
-  <aside class="{hidden ? 'hidden' : ''} lg:fixed z-10 lg:block w-64 h-full bg-gray-800">
+  <aside class="{hidden ? 'hidden' : ''} lg:fixed z-10 lg:block w-64 h-full bg-gray-800 border-yellow-500 border-r">
     <div class="text-gray-700 inset-y-0 left-0 flex flex-col h-full">
 
       <!-- logo -->
