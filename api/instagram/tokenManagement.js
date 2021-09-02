@@ -14,14 +14,16 @@ function getAWSClient(){
 export async function exchangeShortForLongToken(shortToken){
     return new Promise((resolve, reject) => {
         let baseUrl = 'https://graph.instagram.com/access_token';
-
+        console.log('Exchanging short for long token')
         axios.get(baseUrl + '?grant_type=ig_exchange_token&client_secret=' + process.env.INSTAGRAM_CLIENT_SECRET + '&access_token=' + shortToken.access_token)
+        console.log('Exchanged successfully')
         .then((resp) => resolve(resp.data))
         .catch(reject)
     })
 }
 
 export async function storeInstaToken(token){
+    console.log('storing Instagram token')
     // The token is valid for 60 days but we can refresh anytime after 24 hours.
     // We will refresh every 48 hours try and avoid tokens expiring and have to manually renew.
     let expiresAt = Date.now() + (48 * 60 * 60 * 1000);
