@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --port $PORT",
+    "start": "astro dev --port $PORT",
     "build": "astro build",
     "preview": "astro preview"
   },
   "devDependencies": {
     "astro": "^0.20.3",
     "tailwindcss": "^2.2.9"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.981.0"
   }
 }
