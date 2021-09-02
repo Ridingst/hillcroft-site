@@ -16,7 +16,7 @@ export async function exchangeShortForLongToken(shortToken){
         let baseUrl = 'https://graph.instagram.com/access_token';
 
         axios.get(baseUrl + '?grant_type=ig_exchange_token&client_secret=' + process.env.INSTAGRAM_CLIENT_SECRET + '&access_token=' + shortToken.access_token)
-        .then(resolve)
+        .then((resp) => resolve(resp.data))
         .catch(reject)
     })
 }
