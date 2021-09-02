@@ -48,16 +48,13 @@ export async function retrieveValidToken(){
         .then(token => validateToken(token))
         .then(([token, isActive]) => {
             if(isActive){ 
-                console.debug("Instagfram token still active, returning.")
+                console.debug("Instagram token still active, returning.")
                 resolve(token)
             } else {
                 console.debug("Refreshing Instagram token")
                 console.debug(token)
                 refreshToken(token)
-                .then(token => {
-                    return token.response.body 
-                })
-                .then(token => storeToken(token))
+                .then(token => storeInstaToken(token))
                 .then(token => resolve(token))
                 .catch(err => reject(err))
             }
@@ -124,22 +121,13 @@ async function validateToken(token){
 }
 
 function refreshToken(token){
-    // First we get the last token we received
     console.debug('refresh instagram token')
 
     return new Promise((resolve, reject) => {
         axios.get('https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' + token.access_token)
-
-
-        hubspotClient.oauth.defaultApi.createToken(
-            'refresh_token', undefined, undefined,
-            process.env.HUBSPOT_CLIENT_ID,
-            process.env.HUBSPOT_CLIENT_SECRET,
-            token.refresh_token
-        )
-        .then(resolve)
+        .then((response) => resolve(response.data()))
         .catch(err=>{
-            console.error('Error refreshing hubspot token')
+            console.error('Error refreshing instagram token')
             console.error(err);
             reject(err)})
     })
