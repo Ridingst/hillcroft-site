@@ -30,7 +30,7 @@ module.exports = (req, res) => {
       // Then store to S3
       
       res.status(200)
-      res.send('Ok')
+      res.send(response)
     })
     .catch(function(error) {
       console.error(error);
