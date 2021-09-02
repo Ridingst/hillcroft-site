@@ -3,7 +3,7 @@
 </script>
 
 
-<div class='fixed w-2/3 lg:w-64 pt-8 lg:pt-0 h-screen top-0 z-50'>
+<div class='fixed {hidden ? 'w-0' : 'w-2/3'} lg:w-64 pt-8 lg:pt-0 h-screen top-0 z-50'>
   
   <!-- mobile menu bar -->
   <div class="bg-gray-800 flex justify-between lg:hidden absolute top-0 z-20 w-screen text-yellow-500">
