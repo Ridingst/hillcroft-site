@@ -6,6 +6,9 @@ module.exports = (req, res) => {
 
     // Then store to S3
     res.status(200)
-    res.send({'ok'})
-
+    res.send('Ok')
+  } else {
+    res.status(500)
+    res.send('Error')
+  }
 }
