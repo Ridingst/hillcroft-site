@@ -30,9 +30,11 @@ module.exports = (req, res) => {
       */
       
       let accessToken = response.data
-      storeInstaToken(accessToken)      
-      res.status(200)
-      res.send(accessToken)
+      storeInstaToken(accessToken)
+      .then(() => {
+        res.status(200)
+        res.send(accessToken)
+      })     
     })
     .catch(function(error) {
       console.error(error.data);
