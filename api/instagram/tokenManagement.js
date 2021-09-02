@@ -13,7 +13,7 @@ function getAWSClient(){
 
 export async function exchangeShortForLongToken(shortToken){
     return new Promise((resolve, reject) => {
-        baseUrl = 'https://graph.instagram.com/access_token'
+        let baseUrl = 'https://graph.instagram.com/access_token';
 
         axios.get(baseUrl + '?grant_type=ig_exchange_token&client_secret=' + process.env.INSTAGRAM_CLIENT_SECRET + '&access_token=' + shortToken.access_token)
         .then(resolve)
