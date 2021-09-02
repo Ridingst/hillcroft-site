@@ -7,6 +7,6 @@
   </div>
   <video autoplay loop muted class="absolute object-cover top-0 left-0 min-h-screen min-w-full">
     <source src="https://s3.eu-west-1.amazonaws.com/cdn.hillcroftlacrosse.com/Hillcroft+Lacrosse+Club+London.mp4" type="video/mp4"/>
-    Your browser does not support the video tag.
+    Your browser does not support video.
   </video>
 </header>

@@ -1,0 +1,15 @@
+---
+  import InstagramPost from './InstagramPost.astro'
+---
+
+<script>
+  const response = await fetch('https://instagram.com/hillcroftlacrosse/channel/?__a=1')
+  const data = await response.json();
+  posts = data.graphql.user.edge_owner_to_timeline_media.edges.slice(0, 8) 
+  console.log(posts)
+</script>
+
+<div class="flex flex-wrap">
+  
+  {posts.map(p => <InstagramPost image={p.node.display_url} />)}
+</div>

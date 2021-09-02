@@ -9,8 +9,8 @@
   <div class="bg-gray-800 flex justify-between lg:hidden absolute top-0 z-20 w-screen text-yellow-500">
     <!-- logo -->
     <span class="my-auto mx-2"> 
-      <img class="object-contain inline " src="/images/hillcroft_lacrosse_club_london_icon.png">
-      <a href="#" class="uppercase inline align-middle text-gray-500">Hillcroft</a>
+      <img class="object-contain inline " src="/images/hillcroft_lacrosse_club_london_icon.png" alt="Hillcroft Locrosse Club London, icon">
+      <a href="/" class="uppercase inline align-middle text-gray-500">Hillcroft</a>
     </span>
 
     <!-- mobile menu button -->
@@ -30,8 +30,8 @@
 
       <!-- logo -->
       <div class="w-full bg-gray-700 items-center py-8 hidden lg:inline-block ">
-        <a href="#" class="text-white flex space-x-2 px-4 w-full text-xl text-center uppercase">
-          <img class="object-contain h-32 w-full my-4" src="/images/hillcroft_lacrosse_club_logo.png">
+        <a href="/" class="text-white flex space-x-2 px-4 w-full text-xl text-center uppercase">
+          <img class="object-contain h-32 w-full my-4" src="/images/hillcroft_lacrosse_club_logo.png" alt="Hillcroft Lacrosse Club London, logo">
         </a>
       </div>
 

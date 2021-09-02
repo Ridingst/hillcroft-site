@@ -1,0 +1,11 @@
+---
+export interface Props {
+  image: any;
+}
+
+const { image } = Astro.props;
+---
+
+<div class="w-full lg:w-1/4 mb-4 bg-gray-500 p-2">
+  <img src={image} class="cover">
+</div>

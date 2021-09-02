@@ -13,7 +13,7 @@
 
   </div>
   <div class="col-span-1 w-full h-full bg-black z-0">
-    <img class="object-cover h-full w-full" src="/images/hillcroft_lacrosse_club_london_social-300x300.jpg">
+    <img class="object-cover h-full w-full" src="/images/hillcroft_lacrosse_club_london_social-300x300.jpg" alt="Hillcroft Lacrosse Club London Social">
   </div>
 </div>
 
