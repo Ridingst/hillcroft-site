@@ -1,7 +1,7 @@
 const axios = require('axios');
 const FormData = require('form-data');
 
-import { storeInstaToken } from './tokenManagement.js'
+import { exchangeShortForLongToken, storeInstaToken } from './tokenManagement.js'
 
 module.exports = (req, res) => {
   // Check we have an auth code
@@ -28,9 +28,11 @@ module.exports = (req, res) => {
           "user_id": 17841405793187218
         }
       */
-      
+
+      // exchange for long lived token      
       let accessToken = response.data
-      storeInstaToken(accessToken)
+      exchangeShortForLongToken(accessToken)
+      .then(storeInstaToken)
       .then(() => {
         res.status(200)
         res.send(accessToken)
