@@ -1,6 +1,8 @@
 const axios = require('axios');
 const FormData = require('form-data');
 
+import { storeInstaToken } from './tokenManagement.js'
+
 module.exports = (req, res) => {
   // Check we have an auth code
   if(req.query.code){
@@ -27,10 +29,10 @@ module.exports = (req, res) => {
         }
       */
       
-      // Then store to S3
-      
+      let accessToken = response.data
+      storeInstaToken(accessToken)      
       res.status(200)
-      res.send(response.data)
+      res.send(accessToken)
     })
     .catch(function(error) {
       console.error(error.data);
