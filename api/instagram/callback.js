@@ -1,12 +1,42 @@
-module.exports = (req, res) => {
-  if(req.query.code){
-    // Let's exchange the auth code for a token
-    console.debug(req.query.code)
-    // Then exchange for long-lasting token
+const axios = require('axios');
+const FormData = require('form-data');
 
-    // Then store to S3
-    res.status(200)
-    res.send('Ok')
+module.exports = (req, res) => {
+  // Check we have an auth code
+  if(req.query.code){
+    // Stripe the #_ from the code
+    const code = req.query.code.split('#_')[0]
+    console.log('Instagram Access Code: ' + code)
+    
+    // Then exchange for short-lived token
+    const params = new FormData();
+    params.append('client_id', process.env.INSTAGRAM_CLIENT_ID);
+    params.append('client_secret', process.env.INSTAGRAM_CLIENT_SECRET);
+    params.append('grant_type', 'authorization_code');
+    params.append('redirect_uri', process.env.VERCEL_ENV_URL + '/api/instagram/callback');
+    params.append('code', code);
+
+    
+    axios.post('https://api.instagram.com/oauth/access_token', params, {headers: params.getHeaders() })
+    .then(function (response) {
+      console.log(response)
+      /* Expected response 
+        {
+          "access_token": "IGQVJ...",
+          "user_id": 17841405793187218
+        }
+      */
+      
+      // Then store to S3
+      
+      res.status(200)
+      res.send('Ok')
+    })
+    .catch(function(error) {
+      console.error(error);
+      res.status(500)
+      res.send('Error')
+    })
   } else {
     res.status(500)
     res.send('Error')
