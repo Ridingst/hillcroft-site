@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /*.html$
+Disallow: /api/*
+Sitemap: https://hillcroftlacrosse.com/sitemap.xml
