@@ -1,5 +1,10 @@
 <script>
   import GoogleMap from './GoogleMap.svelte'
+  import ContactForm from './ContactForm.svelte'
+
+  function validate() {
+		console.log("I'm the validate() function")
+	}
 </script>
 
 
@@ -14,9 +19,12 @@
         If you have any questions about the club, training, match days or socials, please do get in touch. One of the team would be happy to help and answer any queries.
       </p>
     </div>
+    <div class="py-6">
+      <ContactForm />
+    </div>
 
   </div>
-  <div class="col-span-1 w-full h-full bg-black z-0">
+  <div class="col-span-1 grid-cols-1 w-full h-96 lg:h-full bg-black z-0">
     <GoogleMap />
   </div>
 </div>

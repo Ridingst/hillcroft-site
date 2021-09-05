@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "aws-sdk": "^2.981.0",
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "svelte-forms-lib": "^1.10.6",
+    "yup": "^0.32.9"
   }
 }
