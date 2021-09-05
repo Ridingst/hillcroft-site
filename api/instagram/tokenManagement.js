@@ -58,7 +58,10 @@ export async function retrieveValidToken(){
                 console.debug("Refreshing Instagram token")
                 console.debug(token)
                 refreshToken(token)
-                .then(token => storeInstaToken(token))
+                .then(token => {
+                    storeInstaToken(token)
+                    .then(resolve(token))
+                })
                 .then(token => resolve(token))
                 .catch(err => reject(err))
             }
@@ -120,6 +123,7 @@ function findLatestToken(){
 
 async function validateToken(token){
     return new Promise((resolve) => {
+        console.debug(token.expiresAt + ' vs ' + Date.now())
         resolve([token, token.expiresAt > Date.now()] )
     })
 }
@@ -129,7 +133,7 @@ function refreshToken(token){
 
     return new Promise((resolve, reject) => {
         axios.get('https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' + token.access_token)
-        .then((response) => resolve(response.data()))
+        .then((response) => resolve(response.data))
         .catch(err=>{
             console.error('Error refreshing instagram token')
             console.error(err);

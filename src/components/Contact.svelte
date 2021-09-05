@@ -1,4 +1,9 @@
-<div class="w-full lg:min-h-screen items-center bg-white grid grid-cols-1 lg:grid-cols-3 lg:gap-0" id="socials">
+<script>
+  import GoogleMap from './GoogleMap.svelte'
+</script>
+
+
+<div class="w-full lg:min-h-screen items-center bg-white grid grid-cols-1 lg:grid-cols-3 lg:gap-0" id="contact">
   <div class="w-full lg:col-span-2 lg:inline-block px-10 z-10">
     <div class="py-6">
       <h2 class="text-6xl lg:text-9xl tracking-widest font-bold leading-snug">Contact<span class="text-yellow-500">.</span></h2>
@@ -12,7 +17,7 @@
 
   </div>
   <div class="col-span-1 w-full h-full bg-black z-0">
-    <img class="object-cover h-full w-full" src="/images/hillcroft_lacrosse_club_london_social-300x300.jpg" alt="Hillcroft Lacrosse Club London Social">
+    <GoogleMap />
   </div>
 </div>
 
