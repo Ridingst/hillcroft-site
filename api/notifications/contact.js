@@ -6,7 +6,7 @@ AWS.config.update({
 });
 const axios = require('axios');
 
-const slackURL = "https://hooks.slack.com/services/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";
+const slackURL = process.env.SLACK_URL;
 
 
 async function sendEmail(email, subject, message){
