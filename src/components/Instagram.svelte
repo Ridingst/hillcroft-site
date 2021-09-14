@@ -19,3 +19,5 @@
 		<p>loading...</p>
   {/each}
 </div>
+
+<slot></slot>

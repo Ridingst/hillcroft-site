@@ -20,7 +20,10 @@
       </p>
     </div>
     <div class="py-6">
-      <ContactForm />
+      <!-- <ContactForm /> Removed due to a bug with the api endpoint -->
+      <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900">
+        You can contact us at <strong>info@hillcroftlacrosse.com</strong>
+      </p>
     </div>
 
   </div>
@@ -29,3 +32,4 @@
   </div>
 </div>
 
+<slot></slot>
