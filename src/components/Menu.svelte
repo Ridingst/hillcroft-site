@@ -31,7 +31,7 @@
       <!-- logo -->
       <div class="w-full bg-gray-700 items-center py-8 hidden lg:inline-block ">
         <a href="/" class="text-white flex space-x-2 px-4 w-full text-xl text-center uppercase">
-          <img class="object-contain h-32 w-full my-4" src="/images/hillcroft_lacrosse_club_logo.png" alt="Hillcroft Lacrosse Club London, logo">
+          <img class="object-contain h-32 w-full my-4" src="/images/hillcroft_lacrosse_club_logo_trans.png" alt="Hillcroft Lacrosse Club London, logo">
         </a>
       </div>
 
