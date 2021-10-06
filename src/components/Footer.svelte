@@ -8,6 +8,7 @@
                   <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/privacy" class="focus:outline-none focus:underline hover:text-gray-500">Privacy Policy </a></li>
                   <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/constitution" class="focus:outline-none focus:underline hover:text-gray-500">Club Constitution </a></li>
                   <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/TheHub" class="focus:outline-none focus:underline hover:text-gray-500">The Hub </a></li>
+                  <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/welfare" class="focus:outline-none focus:underline hover:text-gray-500">Welfare & Inclusion </a></li>
               </ul>
           </div>
           <div class="text-sm text-gray-700 text-center">

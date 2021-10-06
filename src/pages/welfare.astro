@@ -1,0 +1,49 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/DefautLayout.astro';
+import Footer from '../components/Footer.svelte';
+
+---
+
+
+  <BaseLayout title="Welfare and Inclusivity">
+    <div class="w-full lg:min-h-screen items-center bg-white grid grid-cols-1 lg:grid-cols-3 gap-0" id="intro">
+      <div class="w-full col-span-1 lg:col-span-2 lg:inline-block px-10 z-10">
+        <div class="py-6">
+          <h2 class="text-6xl lg:text-9xl tracking-widest font-bold leading-snug">You Matter<span class="text-yellow-500">.</span></h2>
+          <h3 class="text-xl lg:text-4xl tracking-widest font-bold leading-snug">Welfare and Inclusivity</h3>
+        </div>
+        <div class="py-6">
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900">
+              At Hillcroft Lacrosse, we pride ourselves on welfare and inclusivity for all our players.
+              We welcome players and supporters from all backgrounds, ages, ethnicities, sexual orientation and gender and actively encourage an inclusive and safe environment for all.
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900">
+              We have zero tolerance for any racism, sexism, homophobia or discrimination of any kind. However, if you ever feel uncomfortable or need to talk to someone, please contact Siena Hammond who is our Welfare and Inclusivity Officer, she will be more than happy to help in any way she can.
+              If you need any support or advice, below are some great organisations and charities that you can contact.
+          </p>
+          <br />
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900"><strong>Mental Health</strong></p>
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900"><a href="https://www.samaritans.org">Samaritans</a> or call 116 126</p>
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900"><a href="https://www.mind.org.uk/">Mind</a> or call 0300 123 3393</p>
+          <br />
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900"><strong>LGBTQ+</strong></p>
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900"><a href="https://www.stonewall.org.uk/">Stonewall</a> or call 0800 0502020
+</p>
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900"><a href="https://lgbt.foundation/">LGBT Foundation</a> or call 0345 3 30 30 30</p>
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900"><a href="https://londonfriend.org.uk/">London Friend</a></p>
+
+        </div>
+
+      </div>
+      <div class="col-span-1 h-full bg-black z-0 w-full">
+        <img class="object-cover h-full w-full" src="/images/hillcroft_lacrosse_club_london_stash.jpg" alt="Welfare and Inclusivity photo">
+      </div>
+    </div>
+
+
+      
+      
+    <Footer />
+  
+
+  </BaseLayout>
