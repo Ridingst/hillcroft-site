@@ -8,6 +8,7 @@ import TeamsWomens from '../components/TeamsWomens.svelte';
 import Socials from '../components/Socials.svelte';
 import Instagram from '../components/Instagram.svelte';
 import Contact from '../components/Contact.svelte';
+import Footer from '../components/Footer.svelte';
 
 let baseUrl = process.env.VERCEL_ENV_URL
 ---
@@ -22,5 +23,7 @@ let baseUrl = process.env.VERCEL_ENV_URL
     <Instagram baseUrl={baseUrl} client:idle />
     <Contact client:idle />
 
+    <Footer />
+    
 
 </BaseLayout>

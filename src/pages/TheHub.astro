@@ -1,0 +1,45 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/DefautLayout.astro';
+import Footer from '../components/Footer.svelte';
+
+---
+
+
+  <BaseLayout title="The Hub">
+    <div class="w-full lg:min-h-screen items-center bg-white grid grid-cols-1 lg:grid-cols-3 gap-0" id="intro">
+      <div class="w-full col-span-1 lg:col-span-2 lg:inline-block px-10 z-10">
+        <div class="py-6">
+          <h2 class="text-6xl lg:text-9xl tracking-widest font-bold leading-snug">The Hub<span class="text-yellow-500">.</span></h2>
+          <h3 class="text-xl lg:text-4xl tracking-widest font-bold leading-snug">Our Home Ground</h3>
+        </div>
+        <div class="py-6">
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900">
+              Hillcroft Lacrosse Club are proud call Tooting and Mitcham Community Sports Club our home ground or as it's more commonly known <strong>The Hub</strong>.
+              The ground is home to Tooting and Mitcham United Football Club, Tooting Bec FC and Smallholdings ABC.
+          <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900">
+              The club has some of the best sports facilities in South West London including a football stadium, 2 multi-sport All Weather Pitches of the highest standard, a fitness gym, a boxing gym and 1km trim trail. A sports bar and function room as well as smaller meeting/conference spaces.
+          </p>
+        </div>
+
+        <a href="https://www.tmunited.org/" class="py-6 cursor-pointer">
+          <div class="py-5">
+            <span class="rounded-md bg-yellow-500 py-2 px-8 text-white text-sm lg:text-lg uppercase tracking-wider inline align-middle text-center">
+                
+                Learn More
+            </span>
+        </div>
+        </a>
+      </div>
+      <div class="col-span-1 h-full bg-black z-0 w-full">
+        <img class="object-cover h-full w-full" src="/images/tooting_and_mitcham_sports_club.jpg" alt="Tooting and Mitcham Ground">
+      </div>
+    </div>
+
+
+      
+      
+    <Footer />
+  
+
+  </BaseLayout>

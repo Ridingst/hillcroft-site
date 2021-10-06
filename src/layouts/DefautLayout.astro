@@ -1,12 +1,13 @@
 ---
 // Component Imports
 import Menu from '../components/Menu.svelte';
+import Footer from '../components/Footer.svelte';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'Hillcroft Lacrosse Club';
+const { title } = Astro.props;
 let open = false
 ---
 
@@ -20,7 +21,7 @@ let open = false
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>{title}</title>
+    <title>Hillcroft Lacrosse Club | {title}</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     
