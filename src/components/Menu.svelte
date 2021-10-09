@@ -52,7 +52,7 @@
           </div>
         </a>
 
-        <a class="block py-2 mt-2" href="/#socials">
+        <a class="block py-2 mt-2" href="/#social">
           <div class="w-full text-center hover:text-yellow-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto my-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" /></svg>
             Social
