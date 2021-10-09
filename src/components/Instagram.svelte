@@ -11,7 +11,7 @@
   })
 </script>
 
-<div class="flex flex-wrap w-full bg-gray-800">
+<div class="flex flex-wrap w-full bg-gray-800" id="socials">
   {#each posts as p}
     <InstagramPost image={p.media_url} link={p.permalink} caption={p.caption} />
   {:else}
