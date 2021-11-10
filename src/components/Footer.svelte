@@ -1,4 +1,5 @@
 <footer id="footer" class="bg-gray-800 w-full bottom-0">
+  <slot />
   <div aria-label="footer" class="py-2">
       <div class="mx-auto container xl:px-12">
         <div class="flex flex-col md:items-center pt-3">
@@ -8,6 +9,7 @@
                   <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/privacy" class="focus:outline-none focus:underline hover:text-gray-500">Privacy Policy </a></li>
                   <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/constitution" class="focus:outline-none focus:underline hover:text-gray-500">Club Constitution </a></li>
                   <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/TheHub" class="focus:outline-none focus:underline hover:text-gray-500">The Hub </a></li>
+                  <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/blog" class="focus:outline-none focus:underline hover:text-gray-500">Blog </a></li>
                   <li class="md:mr-6 cursor-pointer pt-4 lg:py-0"><a href="/welfare" class="focus:outline-none focus:underline hover:text-gray-500">Welfare & Inclusion </a></li>
               </ul>
           </div>
