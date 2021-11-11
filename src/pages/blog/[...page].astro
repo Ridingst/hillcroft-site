@@ -1,7 +1,7 @@
 ---
 export async function getStaticPaths({paginate}) {
   const allBlogs = Astro.fetchContent('$/pages/posts/*.md');
-  return paginate(allBlogs, {pageSize: 5});
+  return paginate(allBlogs, {pageSize: 25});
 }
 
 const {page} = Astro.props;
