@@ -2,7 +2,7 @@
   <div class="w-full col-span-1 lg:col-span-2 lg:inline-block px-10 z-10">
     <div class="py-6">
       <h2 class="text-6xl lg:text-9xl tracking-widest font-bold leading-snug">Hillcroft<span class="text-yellow-500">.</span></h2>
-      <h3 class="text-xl lg:text-4xl tracking-widest font-bold leading-snug">London Lacrosse Club</h3>
+      <h3 class="text-xl lg:text-4xl tracking-widest font-bold leading-snug">Demo For Pedro</h3>
     </div>
     <div class="py-6">
       <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900">
