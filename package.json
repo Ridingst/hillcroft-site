@@ -16,6 +16,8 @@
     "@tailwindcss/typography": "^0.4.1",
     "aws-sdk": "^2.981.0",
     "axios": "^0.21.1",
+    "csvtojson": "^2.0.10",
+    "googleapis": "^39.2.0",
     "svelte-forms-lib": "^1.10.6",
     "yup": "^0.32.9"
   }
