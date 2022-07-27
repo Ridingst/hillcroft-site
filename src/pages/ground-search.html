@@ -10,8 +10,8 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- jsFiddle will insert css and js -->
   </head>
-  <body style="heigh: 100%; margin: 0; padding: 0;">
-    <div id="map" style="size: 100%;"></div>
+  <body style="height: 100%; width: 80%; margin: 0; padding: 0;">
+    <div id="map" style="size: 100%; height:100vh;"></div>
 
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
@@ -1230,17 +1230,27 @@
             position: { lat: obj.lat, lng: obj.lng },
             map,
             title: obj.site_name,
+            }).addListener("click", (evt) => {
+              console.log("Latitude: %s, Longitude: %s", evt.latLng.lat(), evt.latLng.lng())
+              console.log(data.filter(search, {lat: evt.latLng.lat(), lng: evt.latLng.lng()})[0].site_name)
             }); 
         }
 
         function initMap() {
-            const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 15,
-            center: { lat: 51.447913, lng: -0.14478 },
-        });
+          const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 15,
+              center: { lat: 51.447913, lng: -0.14478 },
+          });
         
-        data.forEach(obj => addMarker(obj, map))
-        
+          data.forEach(obj => addMarker(obj, map))
+        }
+
+        /*var query = {lat: "England", lng: "Mark"};
+
+        var result = users.filter(search, query);
+        */
+        function search(user){
+          return Object.keys(this).every((key) => user[key] === this[key]);
         }
 
         window.initMap = initMap;
