@@ -59,7 +59,7 @@
     })
   })
 
-  function addMarker(obj, map, data) {
+  function addMarker(obj) {
     var icon = "http://labs.google.com/ridefinder/images/mm_20_gray.png"
     if(obj.Status == "Enquiring"){
       icon = "http://www.google.com/mapfiles/marker.png"
@@ -88,7 +88,7 @@
       zoom: zoom, gestureHandling : "greedy", center: position,
       disableDefaultUI: true,
     });
-      getData().forEach(obj => addMarker(obj, map, data))
+      getData().forEach(obj => addMarker(obj))
     }
 </script>
 
