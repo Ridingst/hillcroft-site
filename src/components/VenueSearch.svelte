@@ -3,7 +3,7 @@
   let rawData = []
   let data = []
   let rankFilter = 500
-  let statusFilter = "all" //all, shortlist, enquiring
+  let statusFilter = "all" //all, shortlist, enquiring, available
   let map
   let zoom = 11
   let position = { lat: 51.447913, lng: -0.14478 }
@@ -32,7 +32,7 @@
     data = rawData.filter(venue => venue.rank<= rankFilter)
     data = data.filter((venue)=>{
       if(statusFilter == "enquiring"){
-        return (venue.Status== "Enquiring")
+        return (venue.Status== "Enquiring" || venue.Status.includes("Available ("))
       }else if(statusFilter == "shortlist"){
         return (venue.Status!= "")
       } else {
@@ -61,7 +61,9 @@
 
   function addMarker(obj) {
     var icon = "http://labs.google.com/ridefinder/images/mm_20_gray.png"
-    if(obj.Status == "Enquiring"){
+    if(obj.Status.includes("Available (")){
+      icon = "http://maps.google.com/mapfiles/ms/micons/green-dot.png"
+    } else if(obj.Status == "Enquiring"){
       icon = "http://www.google.com/mapfiles/marker.png"
     }else if(obj.Status != ""){
       icon = "http://labs.google.com/ridefinder/images/mm_20_black.png"
@@ -99,7 +101,7 @@
       <div id="map" class="relative w-full h-full"/>
     </div>
     <!-- INFO Section -->
-    <div class="w-full md:w-1/6 h-full md:h-screen items-center mx-2 my-2">
+    <div class="w-full md:w-1/4 h-full md:h-screen items-center mx-2 my-2 overflow-y-scroll">
       <div class="m-auto align-middle">
         <div class="">
           <div class="pb-2 uppercase tracking-wide text-sm text-yellow-500 font-semibold">
@@ -148,6 +150,7 @@
             Tooting: {venue['Travel from Tooting']}<br/>
             Clapham South: {venue['Travel from Clapham South']}<br/>
           </p>
+          <img src={venue['Image']} style="pt-3"/>
         {:else}
           <a class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Select a venue to see more info</a>
         {/if}
