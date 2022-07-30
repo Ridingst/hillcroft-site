@@ -1,16 +1,13 @@
-import { readFileSync } from 'fs';
-import path from 'path';
-import { number } from 'yup';
+const request=require('request')
+const axios = require('axios');
 var csv = require('csvtojson');
 
 export default function handler(req, res) {
-  //const file = path.join(process.cwd(), 'files', 'data.csv');
-  file = 'https://hillcroft-lacrosse.s3.eu-west-1.amazonaws.com/data.csv'
   csv({id:"number", lat: "number", lng: "number"})
-  .fromFile(file)
+  .fromStream(request.get('https://hillcroft-lacrosse.s3.eu-west-1.amazonaws.com/data.csv'))
   .then(function(jsonArrayObj){ 
     res.send({
         data: jsonArrayObj
-     }); 
-   })
+    })
+  })
 }
