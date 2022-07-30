@@ -150,7 +150,13 @@
             Tooting: {venue['Travel from Tooting']}<br/>
             Clapham South: {venue['Travel from Clapham South']}<br/>
           </p>
-          <img src={venue['Image']} style="pt-3"/>
+            {#if venue['Image'].includes(".mp4")}
+              <video autoplay type="video/mp4" style="pt-3">
+                <source src={venue['Image']}/>
+              </video>
+            {:else}
+              <image src={venue['Image']} style="pt-3"/>
+            {/if}
         {:else}
           <a class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Select a venue to see more info</a>
         {/if}
