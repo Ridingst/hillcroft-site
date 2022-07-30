@@ -155,7 +155,7 @@
                 <source src={venue['Image']}/>
               </video>
             {:else}
-              <image src={venue['Image']} style="pt-3"/>
+              <img src={venue['Image']} style="pt-3"/>
             {/if}
         {:else}
           <a class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Select a venue to see more info</a>
