@@ -8,7 +8,7 @@ module.exports = (req, res) => {
   if(req.query.code){
     // Stripe the #_ from the code
     const code = req.query.code.split('#_')[0]
-    console.log('Instagram Access Code: ' + code)
+    //console.log('Instagram Access Code: ' + code)
     
     // Then exchange for short-lived token
     const params = new FormData();
