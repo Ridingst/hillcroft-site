@@ -21,7 +21,7 @@ module.exports = (req, res) => {
     
     axios.post('https://api.instagram.com/oauth/access_token', params, {headers: params.getHeaders() })
     .then(function (response) {
-      console.log(response)
+      //console.log(response)
       /* Expected response 
         {
           "access_token": "IGQVJ...",
