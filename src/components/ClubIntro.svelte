@@ -11,7 +11,7 @@
       </p>
 
       <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900">
-          Playing out of Tooting and Mitcham FC in South London, Hillcroft is a great blend of home and international players seeking to play good quality lacrosse in London.
+          Playing out of City of London Academy Southwark in Central London, Hillcroft is a great blend of home and international players seeking to play good quality lacrosse in London.
           Alongside our home-grown players, we have members from across Europe, North America and Australia, all looking to keep playing the game in England.
       </p>
     </div>
