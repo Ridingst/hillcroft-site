@@ -44,6 +44,6 @@
 <div
   id="map-canvas"
   class="relative w-full rounded h-full"
-  data-lat="51.3938267"
-  data-lng="-0.1720768"
+  data-lat="51.489304"
+  data-lng="-0.066058"
 ></div>
