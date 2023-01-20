@@ -11,7 +11,7 @@
         <br/><br/>
         We all train together, and are a very supportive and welcoming team. No matter your level we would love to have you! We are actively recruiting for both teams, if you would like to come down for a taster session don’t hesitate to get in contact.
         <br/><br/>
-        We train every Tuesday, 8pm-10pm at our home ground.
+        We train every Wednesday, 8pm-10pm at Millennium Arena Battersea Park, East Carriage Drive, London, SW11 4NJ.
       </p>
     </div>
     <div class="py-6">
