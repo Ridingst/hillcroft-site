@@ -16,10 +16,10 @@
           <div class="text-sm text-gray-700 text-center">
             <div class="pb-4">
               <p tabindex="0" class="text-gray-700">Hillcroft Lacrosse Club</p>
-              <p>Millennium Arena</p>
-              <p>Battersea Park, East Carriage Drive</p>
+              <p>City of London Academy Southwark</p>
+              <p>240 Lynton Rd</p>
               <p>London</p>
-              <p>SW11 4NJ</p>
+              <p>SE1 5LA</p>
             </div>
             <p tabindex="0" class="text-gray-700">Built by <a href="https://thomasridings.com">Thomas Ridings</a>.</p>
           </div>
