@@ -9,7 +9,7 @@
           With three men’s teams, we have something for everyone; whether you’ve only recently picked up a stick, have played for a few years,
           or have represented your country on the international stage, we have you covered.
           <br/>
-          We train every Tuesday, 8pm-10pm at our home ground.
+          We train every Wednesday, 8pm-10pm at Millennium Arena Battersea Park, East Carriage Drive, London, SW11 4NJ.
       </p>
     </div>
     <div class="py-6">
