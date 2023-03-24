@@ -6,7 +6,7 @@
     </div>
     <div class="py-6">
       <p class="font-serif tracking-wider lg:tracking-widest leading-widest text-lg italic pt-6 text-gray-900">
-          Based in South London, Hillcroft Lacrosse Club boasts three men’s teams, two women’s teams, a mixed team and an amazing social scene.
+          Based in North London, Hillcroft Lacrosse Club boasts three men’s teams, two women’s teams, a mixed team and an amazing social scene.
         We welcome players of all abilities, whether you’ve only just picked up a stick, or have played at an international level.
       </p>
 
