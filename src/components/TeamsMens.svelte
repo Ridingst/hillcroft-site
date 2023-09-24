@@ -9,7 +9,9 @@
           With three men’s teams, we have something for everyone; whether you’ve only recently picked up a stick, have played for a few years,
           or have represented your country on the international stage, we have you covered.
           <br/>
-          We train every Wednesday, 8pm-10pm at Millennium Arena Battersea Park, East Carriage Drive, London, SW11 4NJ.
+          We train every Wednesday, 7-9 pm, at Club Des Sports, E Acton Ln, London W3 7HB. The nearest stations are Acton Main Line (Elizabeth line 
+          and National Rail) and East Acton (Central Line), both a 10-minute walk to the ground. There is also Acton Central (Overground) which is 
+          a 5-minute walk. Parking is available at the club as well.
       </p>
     </div>
     <div class="py-6">
@@ -24,17 +26,17 @@
       <h3 class="lg:text-2xl tracking-widest font-bold leading-snug border-b border-yellow-500 pb-1 lg:w-1/4"> MEN'S 2ND TEAM.</h3>
       <p class="font-serif tracking-wider lg:tracking-widest leading-widest italic pt-6 text-gray-900">
         Our Men’s 2nd Team sees a mix of experienced hands and more recent graduates play together. They have been one of the dominant forces in SEMLA
-        Division 1 for a number of seasons, and hope to continue this as the club approaches our 50th anniversary in 2021.
+        Division 1 for a number of seasons.
       </p>  
     </div>
 
-    <div class="py-6">
+    <!--<div class="py-6">
       <h3 class="lg:text-2xl tracking-widest font-bold leading-snug border-b border-yellow-500 pb-1 lg:w-1/4"> MEN'S 3RD TEAM.</h3>
       <p class="font-serif tracking-wider lg:tracking-widest leading-widest italic pt-6 text-gray-900">
         Our Men’s 3rd Team brings together some of our more inexperienced players and a range of members who might not always be able to train,
         but who are keen to keep lacrosse in their lives each week. It’s a fantastic opportunity to play some fast, friendly lacrosse.
       </p>  
-    </div>
+    </div>-->
   </div>
   <div class="col-span-1 h-full bg-black z-0">
     <img class="object-cover h-full" src="/images/hillcroft_lacrosse_club_mens_london.jpg" alt="Hillcroft Lacrosse Club London Mens Team">
