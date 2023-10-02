@@ -1,5 +1,14 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
-    mode: 'jit',
-    purge: ['./public/**/*.html', './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}'],
+    content: ['./public/**/*.html', './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}'],
     plugins: [require('@tailwindcss/typography')],
+    theme: {
+      extend: {
+        colors: {
+          green: colors.emerald,
+          yellow: colors.amber,
+          purple: colors.violet,
+        }
+      },
+    },
   };

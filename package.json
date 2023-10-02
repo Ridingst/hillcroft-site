@@ -3,22 +3,26 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev --port $PORT",
-    "start": "astro dev --port $PORT",
+    "dev": "astro dev --port 3000",
+    "start": "astro dev --port 3000",
     "build": "astro build",
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.20.4",
-    "tailwindcss": "^2.2.9"
+    "astro": "^3.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.1",
-    "aws-sdk": "^2.981.0",
-    "axios": "^0.21.1",
+    "@astrojs/svelte": "^4.0.2",
+    "@astrojs/tailwind": "^5.0.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "aws-sdk": "^2.1467.0",
+    "axios": "^0.21.4",
     "csvtojson": "^2.0.10",
-    "googleapis": "^39.2.0",
-    "svelte-forms-lib": "^1.10.6",
-    "yup": "^0.32.9"
+    "googleapis": "^126.0.1",
+    "svelte-forms-lib": "^1.10.10",
+    "yup": "^0.32.11"
   }
 }

@@ -2,6 +2,7 @@
 // Component Imports
 import Menu from '../components/Menu.svelte';
 import Footer from '../components/Footer.svelte';
+import '../global.css';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
@@ -24,8 +25,7 @@ let open = false
     <title>Hillcroft Lacrosse Club | {title}</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    
-    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')} />
+    <link href="/style/global.css">
 
     <!-- seo stuff -->
     <!-- We should look at this instead: https://www.npmjs.com/package/astro-seo -->
